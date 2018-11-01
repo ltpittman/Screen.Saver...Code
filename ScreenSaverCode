@@ -5,11 +5,6 @@ var x, y;
 //var moon;
 var img;
 
-///moon
-//function preload() {
-//  img = loadImage("https://i2.wp.com/freepngimages.com/wp-content/uploads/2016/11/super-moon.png?fit=624%2C624");
-//}
-//moon
 
 
 function setup(){
@@ -19,11 +14,7 @@ function setup(){
  bg=loadImage("https://www.wallpaperup.com/uploads/wallpapers/2016/10/14/1025987/690b964bf1a4f90a28c382225b05bb18-1000.jpg");
  img = loadImage("https://i2.wp.com/freepngimages.com/wp-content/uploads/2016/11/super-moon.png?fit=624%2C624");
  
-  /// moon
-//  x = width / - 3;
-//  y = height / 4;
- // frameRate(5)
-  /// moon
+ 
 }
 
 function draw() {
@@ -32,19 +23,7 @@ function draw() {
     image(img, 85, height/17, img.width*0.7, img.height*0.7);
 
   
-  
-  //// moon
-//  stroke(50);
-  //fill(100);
-//  image(img, this.x, this.y, height/3, img.width/2, img.height*0);
-
-  // Jiggling randomly on the horizontal axis
- // x = x + random(12);
-  // Moving up at a constant speed
- // y = y - 1;
-  ///moon 
-  
-  
+ 
   
   stroke(255)
   noFill(rect)
