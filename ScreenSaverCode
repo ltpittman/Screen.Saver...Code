@@ -2,7 +2,6 @@ var hintImage, stars = []
 var bg;
 var y = 0
 var x, y;
-//var moon;
 var img;
 
 
