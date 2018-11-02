@@ -1,0 +1,56 @@
+var stars = []
+var img;
+
+function setup() {
+  
+  createCanvas(1920, 1080);
+  noCursor();
+  noStroke();
+ bg=loadImage("https://www.wallpaperup.com/uploads/wallpapers/2016/10/14/1025987/690b964bf1a4f90a28c382225b05bb18-1000.jpg");
+  frameRate(4);
+for (var i = 0; i < 1000; i++) {
+  stars.push(new Star());
+  img = loadImage("https://i2.wp.com/freepngimages.com/wp-content/uploads/2016/11/super-moon.png?fit=624%2C624");
+}
+  
+}
+
+function draw() {
+  background(bg);
+  noStroke();
+
+  stroke(255)
+  noFill(rect)
+  //rect(width*0.05, height*0.1, width * .9, height * 0.8);
+  rect(width*0.02, height*0.03, width * 0.96, height * 0.93);
+  
+
+  ///moon
+  image(img, 85, height/17, img.width*0.7, img.height*0.7);
+    
+
+  
+for (var i = 0; i <1000; i++) {
+  stars[i].draw();
+}
+this.x = random(windowWidth);
+this.y = random(windowHeight-500); 
+  
+  fill(255, 255, 250);
+  ellipse(x, y, 15, 15);
+
+}
+
+
+function Star() {
+  
+}
+Star.prototype.draw = function() {
+  noStroke();
+  fill(1255,255,35, 0);
+  ellipse(this.x, this.y, 15, 15);
+  
+  this.x += (random(10) - 5);
+  this.y += (random(10) - 5);
+}
+
