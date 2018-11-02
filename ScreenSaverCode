@@ -75,7 +75,7 @@ Star.prototype.draw = function() {
     this.target.y,
     millis()/1000.0
 );
-  fill(250, alpha * 250);
+  fill(255, alpha * 250);
   
   ellipse(
     this.position.x, this.position.y,
